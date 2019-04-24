@@ -150,3 +150,36 @@ void student_Queue(int no_of_process) {
     round_robin[queue] = 0;
 }
 
+
+int main(int argc, char const *argv[]) {
+    int select_queue, no_of_process;
+
+    puts("Please choose a queue to post your query : ");
+    puts("1. FACULTY queue.");
+    puts("2. STUDENT queue.");
+    printf("> ");
+    scanf("%d", &select_queue);
+
+    switch(select_queue) {
+        case 1 :
+                printf("Enter number of process for FACULTY queue : ");
+                scanf("%d", &no_of_process);
+                
+                faculty_Queue(no_of_process);
+                
+                break;
+
+        case 2 :
+                printf("Enter number of process for STUDENT queue : ");
+                scanf("%d", &no_of_process);
+
+                student_Queue(no_of_process);
+                
+                break;
+
+        default : 
+                printf("Please selet the correct option by running the program again.");
+    }
+
+    return 0;
+}
