@@ -96,8 +96,7 @@ void faculty_Queue(int no_of_process) {
             }
         }
     }while(flag != 0);
-
-
+    
     puts("\n\t\t\t********************************************");
     puts("\t\t\t*****   ROUND ROBIN ALGORITHM OUTPUT   *****");
     puts("\t\t\t********************************************\n");
@@ -110,7 +109,6 @@ void faculty_Queue(int no_of_process) {
     }
 
 }
-
 
 void student_Queue(int no_of_process) {
 
